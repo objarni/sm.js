@@ -19,9 +19,18 @@ Features
   * __Hierarchical State Machines__. Exact structure yet to be determined.
   * __Entry/exit events__. These should implement the same outward-in, inward-out logic as qp for grokkability.
   * __Dynamic creation/deletion of machines__. Since one of my applications is a game, a natural way to add and
-    remove state machines from the app is essential. Any number from 1 to 200 machines could exist as the
-    app is running (start screen has one machine active, while in-game state hosts a constantly fluctuating
-    number of game objects, implemented as machines)
+   remove state machines from the app is essential. Any number from 1 to 200 machines could exist as the
+   app is running. E.g. the start screen has one machine active, while in-game state hosts a constantly fluctuating
+   number of game objects, implemented as state machines.
+
+Scoped out
+----------
+
+ * __No framework__. The lib should just simplify writing/unit testing state machines and their behaviour.
+ * __Timers__. Just let the app handle this.
+ * __Priorities__. Don't see any need for this.
+ * __Subscription__. Even for 200 "live" objects, it should be quick enough on even a low-end mobile phone.
+  All objects recieve all events.
 
 Examples
 --------
