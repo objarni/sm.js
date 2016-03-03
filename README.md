@@ -23,7 +23,7 @@ Features
     app is running (start screen has one machine active, while in-game state hosts a constantly fluctuating
     number of game objects, implemented as machines)
 
-Exampels
+Examples
 --------
 To implement the library, I'm planning to express unit tests, and implementation of, three devices:
 
