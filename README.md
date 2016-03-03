@@ -13,7 +13,8 @@ to structure the application components.
 However, in the web development world, the resource constraints of embedded systems do not (usually) apply. So a full framework is
 not necessary and would bloat the library.
 
-The features I want are:
+Features
+--------
 
   * Hierarchical State Machines. Exact structure yet to be determined.
   * Entry/exit events. These should implement the same outward-in, inward-out logic as qp for grokkability.
@@ -22,6 +23,8 @@ The features I want are:
     app is running (start screen has one machine active, while in-game state hosts a constantly fluctuating
     number of game objects, implemented as machines)
 
+Exampels
+--------
 To implement the library, I'm planning to express unit tests, and implementation of, three devices:
 
   * Reload countdown. This is the traditional mechanic of a (heavy) weapon in a game; user cannot fire until the weapon is reloaded.
