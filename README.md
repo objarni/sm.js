@@ -1,5 +1,5 @@
 # sm.js
-State machine library for JavaScript
+A JavaScript state machine library.
 
 Why?
 ====
