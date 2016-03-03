@@ -22,15 +22,18 @@ Features
    remove state machines from the app is essential. Any number from 1 to 200 machines could exist as the
    app is running. E.g. the start screen has one machine active, while in-game state hosts a constantly fluctuating
    number of game objects, implemented as state machines.
+  * __No global event list__. This was one of the few annoyances with using the QP framework: it required of the
+  programmer to specify a global list of events, which felt wrong and brought down the feeling of elegence. Instead,
+  simple strings to identify events, used locally in actors/machines is all I need. Nothings hinders adding application-
+  level checking of valid events to decrease likelyhood of simple typo mistakes.
 
 Scoped out
 ----------
 
  * __No framework__. The lib should just simplify writing/unit testing state machines and their behaviour.
- * __Timers__. Just let the app handle this.
- * __Priorities__. Don't see any need for this.
- * __Subscription__. Even for 200 "live" objects, it should be quick enough on even a low-end mobile phone.
-  All objects recieve all events.
+ * __No timers__. Just let the app handle this.
+ * __No priorities__. Don't see any need for this.
+ * __No subscriptions__. Even for 200 "live" objects, I can't see how the increased complexity of the lib/apps motivate adding this, as the resulting optimization is likely not noticeable. Instead, all objects recieve all events and have to filter themselves.
 
 Examples
 --------
