@@ -33,7 +33,7 @@ Scoped out
  * __No framework__. The lib should just simplify writing/unit testing state machines and their behaviour.
  * __No timers__. Just let the app handle this.
  * __No priorities__. Don't see any need for this.
- * __No subscriptions__. Even for 200 "live" objects, I can't see how the increased complexity of the lib/apps motivate adding this, as the resulting optimization is likely not noticeable. Instead, all objects recieve all events and have to filter themselves.
+ * __No subscriptions__. I can't see how the increased complexity of the lib/apps motivates adding this, as the resulting optimization is likely not even noticeable. sm.js is meant for up to 200 machines, not 2 million. Instead, all objects recieve all events and have to filter themselves.
 
 Examples
 --------
