@@ -26,7 +26,7 @@ Features
 Scoped out
 ----------
 
- * __No framework__. The lib should just simplify writing/unit testing state machines and their behaviour
+ * __No framework__. The lib should just simplify writing/unit testing state machines and their behaviour.
  * __Timers__. Just let the app handle this.
  * __Priorities__. Don't see any need for this.
  * __Subscription__. Even for 200 "live" objects, it should be quick enough on even a low-end mobile phone.
