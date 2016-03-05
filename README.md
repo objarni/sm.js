@@ -6,7 +6,7 @@ Why?
 
 I need a simple, elegant way to express state machines in JavaScript for a couple of my projects.
 
-I'm used to qp, Quantuum Framework, from embedded systems programming, so I'm borrowing a lot of ideas from that framework:
+I'm used to qp, Quantum Framework, from embedded systems programming, so I'm borrowing a lot of ideas from that framework:
 hierarchical state machines expressed as functions returning their parent, events passed to a general publish method, actor pattern
 to structure the application components.
 
